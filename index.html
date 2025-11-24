@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HerGenesis | 8-Bit Revival</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mc: {
+                bg: '#1a1a1a',
+                panel: '#c6c6c6',
+                dark: '#3a3a3a',
+                dirt: '#5d4037',
+                grass: '#388e3c',
+                diamond: '#00bcd4',
+                rose: '#e91e63',
+                gold: '#ffc107',
+                iron: '#eceff1',
+                text: '#212121'
+              }
+            },
+            fontFamily: {
+              'pixel': ['"Press Start 2P"', 'cursive'],
+              'retro': ['"VT323"', 'monospace'],
+            },
+            boxShadow: {
+              'pixel': '4px 4px 0px 0px rgba(0,0,0,0.4)',
+              'pixel-sm': '2px 2px 0px 0px rgba(0,0,0,0.4)',
+              'pixel-in': 'inset 4px 4px 0px 0px rgba(0,0,0,0.2)',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #2e211d; /* Deep Dirt */
+        background-image: 
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 32px 32px;
+        color: #eceff1;
+        font-family: 'VT323', monospace;
+        image-rendering: pixelated;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 16px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #3a3a3a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #757575;
+        border: 2px solid #3a3a3a;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #9e9e9e;
+      }
+
+      .pixel-panel {
+        background-color: #c6c6c6;
+        border: 4px solid #3a3a3a;
+        box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.5);
+        color: #212121;
+      }
+
+      .pixel-btn {
+        border: 4px solid;
+        transition: all 0.1s;
+        text-transform: uppercase;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.7rem;
+      }
+      .pixel-btn:active {
+        transform: translate(2px, 2px);
+        box-shadow: 0px 0px 0px 0px !important;
+      }
+
+      .pixel-text-shadow {
+        text-shadow: 2px 2px 0px #000000;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "ethers": "https://esm.sh/ethers@6.11.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
